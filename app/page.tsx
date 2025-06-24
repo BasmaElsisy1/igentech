@@ -1,4 +1,5 @@
-import { fetchServer } from "@/api/general";
+export const runtime = 'edge';
+import { fetchServer } from "@/_api/general";
 import Services from "./_components/Services";
 
 export default async function Page() {
