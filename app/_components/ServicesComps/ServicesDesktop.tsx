@@ -30,6 +30,7 @@ export default function ServicesDesktop({ data }: Props) {
             <div className='flex gap-4 items-center justify-center h-[595px]'>
                 {data.services.map((service: SingleService, index: number) => (
                     <div key={index}
+                        onClick={() => setActive(index)}
                         className={`${Active == index ? "lg:w-[893px] w-[700px]" : "w-[64px] justify-center"} transition-all duration-500 flex items-center rounded-[64px] ${getHeightClass(index)}`} style={{ background: `${service.service_color}` }}>
                         <h2 className={`${Active == index ? " hidden" : "block"} transition-all duration-500 text-xl font-semibold text-primary -rotate-90 whitespace-nowrap p-4`}>{service.service_title}</h2>
                         <AnimatePresence>
