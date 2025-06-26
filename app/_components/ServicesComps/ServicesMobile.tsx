@@ -1,9 +1,8 @@
 'use client';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { Props } from '../Services';
 import { SingleService } from '../types';
-import ServicesDesktopLoading from './ServicesDesktopLoading';
 import ServicesMobileLoading from './ServicesMobileLoading';
 
 export default function ServicesMobile({ data: { services } }: Props) {

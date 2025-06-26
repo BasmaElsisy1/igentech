@@ -28,7 +28,6 @@ export default function Services({ data }: Props) {
                 <ServicesDesktop data={data} /> :
                 <ServicesMobile data={data} />
             }
-
         </div>
     )
 }
